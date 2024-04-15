@@ -1,0 +1,62 @@
+@import '../variables.scss';
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  margin: 48px 96px;
+
+  .block {
+    margin: auto;
+    max-width: 720px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    h3 {
+      color: $blue-1;
+      @include h3();
+    }
+
+    p {
+      @include p1-r();
+      color: $n3;
+
+      .highlight {
+        @include p1-b();
+      }
+    }
+
+    .link-out {
+      margin-top: 24px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      a {
+        p {
+          color: $n3;
+          transition: 0.24s ease;
+          @include p1-r();
+  
+          &:hover {
+            color: $n1;
+            @include p1-b();
+          }
+        }
+      }
+    }
+
+    .child-block {
+      display: flex;
+      gap: 12px;
+      flex-direction: column;
+      margin-top: 32px;
+
+      h4 {
+        color: $blue-2;
+        @include h4();
+      }
+    }
+  }
+}

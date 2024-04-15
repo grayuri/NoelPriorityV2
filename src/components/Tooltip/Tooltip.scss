@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.tooltip {
+  opacity: 0;
+  pointer-events: none;
+  width: max-content;
+  background-color: $n6;
+  border-radius: 8px;
+  margin: 8px;
+  padding: 12px;
+  border: 4px;
+  color: $n2;
+  transition: 0.24s ease;
+
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  @include ambient12DP();
+  @include l3-r();
+}

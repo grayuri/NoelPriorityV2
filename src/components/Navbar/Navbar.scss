@@ -1,0 +1,50 @@
+@import '../../variables.scss';
+
+header {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: center;
+  
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @include umbra24DP();
+
+    margin: 0;
+    padding: 24px;
+    list-style: none;
+    background-image: linear-gradient(225deg, #447fae 0, #3979aa 50%, #2d73a6 100%);
+    border-radius: 32px;
+
+    li {
+      position: relative;
+      
+      a {
+        opacity: 0.6;
+        transition: 0.24s ease;
+      }
+
+      &.actual-route {
+        a {
+          opacity: 1;
+            
+            &:hover {
+              opacity: 1;
+          }
+        }
+      }
+
+      &:hover {
+        a {
+          opacity: 0.8;
+        }
+
+        .tooltip {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

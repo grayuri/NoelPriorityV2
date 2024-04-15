@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+.check-dwells-page {
+  padding: 48px 96px;
+
+  h2 {
+    @include h2();
+    margin-bottom: 24px;
+    text-align: center;
+    color: #295467;
+
+    .highlight {
+      color: #0091FF;
+    }
+  }
+
+  p {
+    margin: 12px auto;
+    max-width: 540px;
+    @include p1-r();
+    color: $n3;
+
+    .highlight {
+      @include p1-b();
+    }
+  }
+
+  .link-out {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    a {
+      p {
+        color: $n3;
+        transition: 0.24s ease;
+        @include p1-r();
+
+        &:hover {
+          color: $n1;
+          @include p1-b();
+        }
+      }
+    }
+  }
+}
