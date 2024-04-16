@@ -1,11 +1,10 @@
 "use client"
 
+import { useContext, useRef } from "react";
+import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
 import { motion, AnimatePresence } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { verticalAppearence } from "@/utils/animatedAppearences";
-
-import { LayoutRouterContext } from "next/dist/shared/lib/app-router-context.shared-runtime";
-import { useContext, useRef } from "react";
 
 function FrozenRouter({ children }) {
   const context = useContext(LayoutRouterContext);
@@ -18,8 +17,7 @@ function FrozenRouter({ children }) {
   );
 }
 
-
-export default function Template({ children }) {
+export default function PageTransition({ children }) {
   const pathname = usePathname()
 
   return (

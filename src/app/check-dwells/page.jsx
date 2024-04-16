@@ -19,7 +19,7 @@ export default function CheckDwellsPage() {
         initial="hidden"
         animate="visible"
       >
-        <AnimatedParagraph>Infelizmente essa funcionalidade não pode existir no momento presente, mas, se tudo der certo, ela pode existir no futuro!</AnimatedParagraph>
+        <AnimatedParagraph>Infelizmente essa funcionalidade não pôde existir no momento presente, mas, se tudo der certo, ela pode existir no futuro!</AnimatedParagraph>
         <AnimatedParagraph>Se quiser visualizar como pode ser esse futuro, fique à vontade para visualizar o protótipo abaixo.</AnimatedParagraph>
         <div className="link-out">
             <AnimatedImage className="icon">

@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 import AnimatedTitle from "@/components/AnimatedTitle/AnimatedTitle"
 import AnimatedParagraph from '@/components/AnimatedParagraph/AnimatedParagraph';
-import './Home.scss';
 import AnimatedImage from '@/components/AnimatedImage/AnimatedImage';
+import './Home.scss';
 
 export default function Home() {
   return (

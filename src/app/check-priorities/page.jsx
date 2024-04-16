@@ -1,5 +1,6 @@
 "use client"
-import { useState, useEffect, useRef, useLayoutEffect } from 'react';
+
+import { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CheckIcon from '@mui/icons-material/Check';
