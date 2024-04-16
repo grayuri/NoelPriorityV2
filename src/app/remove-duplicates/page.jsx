@@ -67,7 +67,7 @@ export default function RemoveDuplicatesPage() {
             >
               <ArrowForwardIcon className='arrow' />
               <div className="filtered-values-container">
-                <h3>Valores Filtrados</h3>
+                <h3>IDs Concisos</h3>
                 <div className="values">
                   {
                     filteredValues.map((value, index) => (

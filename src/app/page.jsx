@@ -92,7 +92,7 @@ export default function Home() {
             removedor de duplicatas faz, ele <span className="highlight">
               irá remover todas as duplicatas de todos os códigos dos Totes e irá
               me retornar os valores concisos de cada ID
-            </span>. Basta agora só copiar esses códigos e enviar para o
+            </span>. Basta agora só copiar estes códigos e enviar para o
             Printmoon e imprimir. Simples, mas prático, não é?
           </AnimatedParagraph>
         </article>
@@ -100,7 +100,7 @@ export default function Home() {
           <AnimatedTitle type="h4">Como Usar o Verificador de Prioridades?</AnimatedTitle>
           <AnimatedParagraph>
             Como fizemos no Removedor de Duplicatas, iremos enviar os dados na caixinha inicial que é
-            fornecida para nós. Após enviarmos esses dados, iremos escanear no verificador de prioridades os
+            fornecida para nós. Após enviarmos estes dados, iremos escanear no verificador de prioridades os
             códigos de barras presentes nos Totes, Cages ou Carts. Com base nos dados que enviamos
             previamente, <span className="highlight">
               o verificador irá, logicamente, analisar se o código que escaneamos é uma prioridade
