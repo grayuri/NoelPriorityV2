@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import './globals.scss';
+import './NotFoundPage.scss';
 
 export default function NotFoundPage() {
   return (
