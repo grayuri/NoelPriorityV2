@@ -1,9 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
-
 import AnimatedTitle from "@/components/AnimatedTitle/AnimatedTitle"
 import AnimatedParagraph from '@/components/AnimatedParagraph/AnimatedParagraph';
-import AnimatedImage from '@/components/AnimatedImage/AnimatedImage';
 import './Home.scss';
 
 export default function Home() {
@@ -12,39 +8,21 @@ export default function Home() {
       <section className="block">
         <AnimatedTitle type="h3">Introdução</AnimatedTitle>
         <AnimatedParagraph>
-          Olá! Um prazer vê-lo(a) por aqui. É também um deleite apresentar para todos vocês o Noel, um
+          Olá! Um prazer vê-lo(a) por aqui. Sou Bruno Victor, um simples desenvolvedor e Amazon Associate responsável pela criação desta querida ferramenta.
+        </AnimatedParagraph>
+        <AnimatedParagraph>
+          Dito isso, é um deleite apresentar para todos vocês o Noel, um
           projeto prático e versátil, o qual é extremamente útil para <span className="highlight">facilitar o seu fluxo de trabalho na verificação de dwells e prioridades (CPTs)</span>.
         </AnimatedParagraph>
         <AnimatedParagraph>
-          Até o momento (15/04/2024), <span className="highlight">o Noel ainda não está completamente automatizado para agilizar ainda mais a verificação de dados</span>, tudo isso graças a, é claro, sensibilidade presente na distribuição
-          dos dados presentes na ferramenta mais essencial e fundamental do nosso FC (REC1): o Rodeo.
+          Até o momento (15/04/2024), <span className="highlight">o Noel ainda não está completamente automatizado para agilizar ainda mais a verificação de dados</span>, tudo isso graças a sensibilidade presente na distribuição
+          dos dados da ferramenta mais essencial e fundamental do nosso FC (REC1): o Rodeo.
         </AnimatedParagraph>
         <AnimatedParagraph>
           Contudo, isso <span className="highlight">pode mudar no futuro</span>, e se vocês (Shadows, PAs, Shifts ou entusiastas) tiverem a
           oportunidade de vislumbrar essa evolução, será um prazer demonstrá-los o máximo da capacidade
           do nosso querido Noel.
         </AnimatedParagraph>
-        <AnimatedParagraph>
-          Caso queiram visualizar como o Noel poderá se tornar no futuro, deixarei disponibilizado o <span className="highlight">
-            link do
-            protótipo
-          </span> - assim vocês poderão avaliar e apoiar o crescimento dele.
-        </AnimatedParagraph>
-        <div className="link-out">
-          <AnimatedImage className="icon">
-            <Image
-              src="/icons/figma-icon.svg"
-              width={25}
-              height={32}
-              alt='Figma Icon'
-            />
-          </AnimatedImage>
-          <Link href="https://www.figma.com/file/x0Cv4XRb3KHZeHKk0tpiXg/Noel-Priority?type=design&node-id=1%3A4&mode=design&t=jWptysZDFI1yvZ8K-1" target="_blank">
-            <AnimatedParagraph>
-              Assim será o Noel
-            </AnimatedParagraph>
-          </Link>
-        </div>
       </section>
       <section className="block">
         <AnimatedTitle type="h3">

@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
+import Footer from "@/components/Footer/Footer";
 import PageTransition from "./PageTransition"
 import './globals.scss';
 
@@ -14,6 +15,7 @@ export default function RootLayout({ children }) {
         <Navbar />
         <PageTransition>
           {children}
+          <Footer />
         </PageTransition>
       </body>
     </html>

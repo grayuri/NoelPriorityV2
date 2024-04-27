@@ -1,0 +1,20 @@
+@import '../../variables.scss';
+
+footer {
+  
+  p {
+    text-align: center;
+    color: $n3;
+    @include p2-r();
+
+    a {
+      color: $n3;
+      transition: 0.24s ease;
+
+      &:hover {
+        color: $blue-1;
+        text-decoration: underline;
+      }
+    }
+  }
+}
