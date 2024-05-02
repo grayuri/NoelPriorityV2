@@ -28,13 +28,13 @@ export default function CheckPrioritiesPage() {
   }
 
   function writeCheckedValues(value) {
-    setCheckedValue(value)
+    setCheckedValue(value.trim())
 
-    if (checkedValue.startsWith("tsX")) {
-      if (checkedValue.length === 10) getterPriorityInputRef.current.select()
-    }
-    else if (checkedValue.startsWith("tscage") || checkedValue.startsWith("tscart")) {
+    if (checkedValue.startsWith("tscage") || checkedValue.startsWith("tscart")) {
       if (checkedValue.length === 8) getterPriorityInputRef.current.select()
+    }
+    else {
+      if (checkedValue.length === 10) getterPriorityInputRef.current.select()
     }
   }
 
@@ -170,6 +170,7 @@ export default function CheckPrioritiesPage() {
                     onChange={(e) => writeCheckedValues(e.target.value)}
                     ref={getterPriorityInputRef}
                     placeholder='Escaneie aqui um Tote, Cage ou Cart...'
+                    value={checkedValue}
                   />
                   <div className={
                     `priority-result 
@@ -194,7 +195,7 @@ export default function CheckPrioritiesPage() {
                               <img src="/images/yellow-tote.png" alt="Yellow Tote Image" />
                             </div>
                             <p className="message">
-                              Escaneie o tote desejado para verificar se ele é, de fato, uma prioridade.
+                              Escaneie o compartimento desejado para verificar se ele é uma prioridade.
                             </p>
                           </>
                         )
