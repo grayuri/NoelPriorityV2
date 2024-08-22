@@ -71,19 +71,6 @@ export default function Navbar() {
             Checador de Prioridades
           </Tooltip>
         </li>
-        <li className={pathname === "/check-dwells" ? "actual-route" : ""}>
-          <Link href="/check-dwells">
-            <Image
-              src="/icons/check-dwell-icon.svg"
-              width={17.14}
-              height={20}
-              alt="Dwell Checker Icon"
-            />
-          </Link>
-          <Tooltip>
-            Checador de Dwells
-          </Tooltip>
-        </li>
       </ul>
     </motion.header>
   )

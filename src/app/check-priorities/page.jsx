@@ -33,6 +33,12 @@ export default function CheckPrioritiesPage() {
     if (checkedValue.startsWith("tscage") || checkedValue.startsWith("tscart")) {
       if (checkedValue.length === 8) getterPriorityInputRef.current.select()
     }
+    if (checkedValue.startsWith("resml") || checkedValue.startsWith("relrg")) {
+      if (checkedValue.length === 7) getterPriorityInputRef.current.select()
+    }
+    if (checkedValue.startsWith("reGW")) {
+      if (checkedValue.length === 6) getterPriorityInputRef.current.select()
+    }
     else {
       if (checkedValue.length === 10) getterPriorityInputRef.current.select()
     }
